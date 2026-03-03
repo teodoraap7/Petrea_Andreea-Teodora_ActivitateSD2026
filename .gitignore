@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .vs/
 Debug/
 Release/
@@ -6,3 +7,13 @@ Release/
 *.pdb
 *.ilk
 *.log
+=======
+.vs
+x64
+Debug
+Release
+.exe
+.obj
+.pdb
+.ilk
+>>>>>>> 9b2f27218f0210c22bbb22c90e3ed62b1b22f9e0
