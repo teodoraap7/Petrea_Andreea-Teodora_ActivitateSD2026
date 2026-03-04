@@ -1,12 +1,9 @@
 .vs/
-*.user
-*.suo
-*.log
+x64/
 Debug/
 Release/
-x64/
-x86/
-*.obj
 *.exe
+*.obj
 *.pdb
 *.ilk
+*.log
