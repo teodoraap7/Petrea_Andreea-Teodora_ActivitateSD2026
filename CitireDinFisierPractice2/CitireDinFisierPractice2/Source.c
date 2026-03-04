@@ -68,6 +68,19 @@ Produs* citireVectorProduse(const char* numeFisier, int* nrProduseCitite) {
 	return produse;
 }
 
+void dezalocare(Produs** produse, int* nrProduse) {
+	for (int i = 0; i < *nrProduse; i++) {
+		free((*produse)[i].denumire);
+	}
+	for (int i = 0; i < *nrProduse; i++) {
+		free((*produse)[i].stocuri);
+	}
+	free(*produse);
+	*produse = NULL;
+	(*nrProduse) = 0;
+
+}
+
 
 int main() {
 	int nrProduse= 0;
