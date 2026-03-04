@@ -1,0 +1,5 @@
+1,3,10 15 20,Laptop
+2,2,5 8,Mouse
+3,4,12 14 9 7,Monitor
+4,1,50,Tastatura
+5,3,3 6 9,Cablu
