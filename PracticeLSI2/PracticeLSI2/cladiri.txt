@@ -1,0 +1,6 @@
+1,6,900000.0,BlocVerde,Ionescu,B
+2,10,2500000.5,OfficeTower,Popescu,A
+3,5,850000.0,BlocCentral,Ionescu,B
+4,12,3200000.75,MallCity,Popescu,A
+5,8,1500000.2,HotelGrand,Georgescu,C
+6,6,900000.0,BlocVerde,Ionescu,B
