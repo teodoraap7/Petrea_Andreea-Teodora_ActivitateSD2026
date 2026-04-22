@@ -1,0 +1,5 @@
+101;3;Paracetamol,Nurofen,Aspenter;Dr.Ionescu;150.5;50
+202;2;Algocalmin,VitaminaC;Dr.Popescu;80.0;100
+303;1;Insulina;Dr.Georgescu;300.0;90
+108;2;Claritin,Zyrtec;Dr.Ionescu;120.0;20
+405;3;Antibiotic,Probiotic,Sirop;Dr.Popa;250.0;0
