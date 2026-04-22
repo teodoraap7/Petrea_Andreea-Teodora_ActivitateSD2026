@@ -1,0 +1,7 @@
+101;Eroare Login;Paun Andrei;2023-10-01;Open
+102;Update Server;Popescu Maria;2023-10-02;In Progress
+103;Resetare Parola;Vranceanu Ionut;2023-10-03;Fixed
+104;Bug Interfata;Ionescu Andrei;2023-10-04;Open
+105;Export Date;Pop Elena;2023-10-05;Fixed
+106;Configurare Mail;Popovici Maria;2023-10-06;Closed
+107;Optimizare DB;Zamfir Andrei;2023-10-07;Open
