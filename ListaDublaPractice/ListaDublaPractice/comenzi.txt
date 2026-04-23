@@ -1,0 +1,6 @@
+1,Ana,200,nou
+2,Ion,300,procesat
+3,Ana,150,livrat
+4,Maria,500,nou
+5,George,250,procesat
+6,Ana,100,nou
