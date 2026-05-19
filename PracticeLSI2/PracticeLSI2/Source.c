@@ -140,7 +140,7 @@ void stergeCladiriDinSector(Nod** cap, char sector) {
 		free(aux);
 	} //pe prima pozitie nu avem sectorul
 	//vf unde mai avem sectorul
-	if ((!*cap)) {
+	if (*cap) {
 		Nod* p = *cap;
 		while (p) {
 			while (p->next && p->next->info.sector != sector) {

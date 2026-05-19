@@ -1,0 +1,5 @@
+01;Login error aplicatie;Popescu Ana;10-04-2026;new
+02;Nu merge imprimanta;Ionescu Mihai;11-04-2026;open
+03;Bug la raport;Popescu Ana;12-04-2026;progress
+04;Reset parola;Georgescu Maria;13-04-2026;fixed
+05;Aplicatie blocata;Popescu Ana;14-04-2026;closed

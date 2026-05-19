@@ -1,0 +1,5 @@
+1,Telefon,2500,Electronice
+2,Laptop,4500,Electronice
+3,Tricou,100,Imbracaminte
+4,Blugi,200,Imbracaminte
+5,TV,3000,Electronice

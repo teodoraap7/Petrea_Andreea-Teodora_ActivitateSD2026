@@ -1,0 +1,15 @@
+1,2010,9.3,Inception,Christopher Nolan
+2,1994,9.2,The Shawshank Redemption,Frank Darabont
+3,2008,9.0,The Dark Knight,Christopher Nolan
+4,1972,9.2,The Godfather,Francis Ford Coppola
+5,1999,8.7,The Matrix,Lana Wachowski
+6,2014,8.6,Interstellar,Christopher Nolan
+7,1994,8.9,Pulp Fiction,Quentin Tarantino
+8,2019,8.5,Parasite,Bong Joon-ho
+9,1993,8.8,Schindlers List,Steven Spielberg
+10,2001,8.8,The Lord of the Rings,Peter Jackson
+11,1980,8.4,The Shining,Stanley Kubrick
+12,2003,8.9,The Lord of the Rings Return,Peter Jackson
+13,1990,8.5,Goodfellas,Martin Scorsese
+14,2000,8.5,Memento,Christopher Nolan
+15,1995,8.6,Se7en,David Fincher

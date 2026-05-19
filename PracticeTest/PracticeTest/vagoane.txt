@@ -1,0 +1,6 @@
+101,CFR Calatori,80,120
+102,InterRail,45,100
+103,CFR Calatori,45,90
+104,RegioTrans,70,110
+105,Astra Trans,30,80
+106,InterCity,30,60
