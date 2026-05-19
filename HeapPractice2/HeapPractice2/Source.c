@@ -1,11 +1,7 @@
-//vector folosit pt cozi de prioritate
-//min heap - acces rapid la elem minim
-//max heap - acces rapid la elem max 
-//un vector practic
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 
 struct StructuraMasina {
@@ -18,13 +14,6 @@ struct StructuraMasina {
 };
 
 typedef struct StructuraMasina Masina;
-
-struct Heap {
-	int lungime;  //cate elem am in vector
-	Masina* vector; 
-	int nrMasiniVizibile;
-};
-typedef struct Heap Heap;
 
 Masina citireMasinaDinFisier(FILE* file) {
 	char buffer[100];
@@ -48,11 +37,19 @@ Masina citireMasinaDinFisier(FILE* file) {
 void afisareMasina(Masina m) {
 	printf("%d \n", m.id);
 	printf("%d \n", m.nrUsi);
-	printf("%f \n", m.pret);
+	printf("%2.f \n", m.pret);
 	printf("%s \n", m.model);
 	printf("%s \n", m.numeSofer);
 	printf("%c \n\n", m.serie);
 }
+
+struct Heap {
+	Masina* vector;
+	int lungime;
+	int nrMasiniVizibile;
+};
+
+typedef struct Heap Heap;
 
 Heap initializareHeap(int lungime) {
 	Heap heap;
@@ -62,53 +59,46 @@ Heap initializareHeap(int lungime) {
 	return heap;
 }
 
-void filtrareHeap(Heap heap, int pozitie) {
-	//radacina -> cei doi fii 
-	//fiuStanga = 2*poz+1
-	//fiuDreapta = 2*poz+2
-	int pozFiuStanga = 2 * pozitie + 1;
-	int pozFiuDreapta = 2 * pozitie + 2;
-	//respecta pozitia? val nod sa fie mai mare decat a fiilor
-	int pozMax = pozitie;
-	if (heap.vector[pozMax].id < heap.vector[pozFiuStanga].id) {
-		pozMax = pozFiuStanga;
-	} 
-	if (heap.vector[pozMax].id < heap.vector[pozFiuDreapta].id) {
-		if (pozFiuDreapta < heap.nrMasiniVizibile) {
-			pozMax = pozFiuDreapta;
+void filtreazaHeap(Heap heap, int pozitieNod) {
+	int pozFiuStanga = 2 * pozitieNod + 1;
+	int pozFiuDreapta = 2 * pozitieNod + 2;
+	int pozitieMin = pozitieNod;
+	if ( pozFiuStanga < heap.lungime && heap.vector[pozitieMin].pret < heap.vector[pozFiuStanga].pret ) {
+		pozitieMin = pozFiuStanga;
+	}
+	if (pozFiuDreapta < heap.lungime && heap.vector[pozitieMin].pret < heap.vector[pozFiuDreapta].pret ) {
+		pozitieMin = pozFiuDreapta;
+	}
+	if (pozitieMin != pozitieNod) {
+		Masina aux = heap.vector[pozitieMin];
+		heap.vector[pozitieMin] = heap.vector[pozitieNod];
+		heap.vector[pozitieNod] = aux;
+		if (pozitieMin <= (heap.nrMasiniVizibile - 2) / 2) {
+			filtreazaHeap(heap, pozitieMin);
 		}
 	}
-	if (pozMax != pozitie) {
-		Masina aux = heap.vector[pozMax];
-		heap.vector[pozMax] = heap.vector[pozitie];
-		heap.vector[pozitie] = aux;  
-		if (pozMax <= (heap.nrMasiniVizibile - 2) / 2) {
-			filtrareHeap(heap, pozMax);
-		}
-	}
-
 }
-Heap citireHeapDinFisier(const char* numeFisier) {
+
+Heap citireHeapDeMasiniDinFisier(const char* numeFisier) {
 	FILE* fisier = fopen(numeFisier, "r");
 	Heap heap = initializareHeap(10);
 	while (!feof(fisier)) {
 		heap.vector[heap.nrMasiniVizibile++] = citireMasinaDinFisier(fisier);
 	}
 	fclose(fisier);
+
 	for (int i = (heap.nrMasiniVizibile - 2) / 2; i >= 0; i--) {
-		filtrareHeap(heap, i);
+		filtreazaHeap(heap, i);
 	}
 	return heap;
-}
 
+}
 void afisareHeap(Heap heap) {
-	//nr masini elementele vizibile
 	for (int i = 0; i < heap.nrMasiniVizibile; i++) {
 		afisareMasina(heap.vector[i]);
 	}
 }
-
 int main() {
-	Heap heap = citireHeapDinFisier("masini.txt");
+	Heap heap = citireHeapDeMasiniDinFisier("masini.txt");
 	afisareHeap(heap);
 }
