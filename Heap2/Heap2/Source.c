@@ -270,7 +270,7 @@ NodAVL* echilibreazaArbore(NodAVL* radacina) {
 		radacina->dreapta = rotireDreapta(radacina->dreapta);
 		return rotireStanga(radacina);
 	}
-	return radacina;
+	return radacina;;
 }
 
 NodAVL* adaugaRecursivAVL(NodAVL* radacina, Animal a) {

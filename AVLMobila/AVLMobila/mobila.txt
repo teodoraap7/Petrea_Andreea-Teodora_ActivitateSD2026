@@ -1,0 +1,10 @@
+1,Scaun,Lemn,4,150.00
+2,Masa,Sticla,6,800.00
+3,Pat,Lemn,2,1200.00
+4,Dulap,Pal,3,650.00
+5,Canapea,Textil,1,2100.00
+6,Biblioteca,Lemn,5,430.00
+7,Birou,Metal,4,550.00
+8,Noptiera,Pal,2,180.00
+9,Fotoliu,Piele,1,950.00
+10,Comoda,Lemn,3,370.00
