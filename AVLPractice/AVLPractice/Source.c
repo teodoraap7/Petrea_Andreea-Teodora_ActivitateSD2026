@@ -87,6 +87,7 @@ Nod*  rotireDreapta(Nod* radacina) {
 	return B;
 }
 
+
 Nod*  rotireStanga(Nod* radacina) {
 	Nod* B = radacina->dreapta;
 	Nod* T = B->stanga;

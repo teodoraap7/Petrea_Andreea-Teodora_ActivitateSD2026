@@ -1,0 +1,15 @@
+1,12,4.5,Leu,Africa
+2,7,8.2,Delfin,Ocean
+3,25,2.1,Broasca testoasa,Asia
+4,3,9.5,Vultur,Europa
+5,18,5.7,Tigru,Asia
+6,1,9.8,Gepard,Africa
+7,45,1.2,Elefant,Africa
+8,9,7.3,Lup,Europa
+9,30,3.4,Urs polar,Arctic
+10,5,8.9,Vulpe,Europa
+11,22,4.1,Jaguar,America
+12,2,9.1,Acvila,America
+13,50,0.8,Balena,Ocean
+14,6,8.5,Pantera,Asia
+15,15,6.2,Orca,Ocean
